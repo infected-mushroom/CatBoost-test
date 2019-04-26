@@ -13,6 +13,7 @@
 		48A5D28B2263C54000F8B2D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A5D28A2263C54000F8B2D3 /* Assets.xcassets */; };
 		48A5D28E2263C54000F8B2D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A5D28C2263C54000F8B2D3 /* LaunchScreen.storyboard */; };
 		48A5D2992263C54000F8B2D3 /* CatBoost_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A5D2982263C54000F8B2D3 /* CatBoost_testTests.swift */; };
+		925FCA20227321D500C65840 /* WalkingModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 925FCA192273188A00C65840 /* WalkingModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		48A5D2942263C54000F8B2D3 /* CatBoost testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CatBoost testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A5D2982263C54000F8B2D3 /* CatBoost_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBoost_testTests.swift; sourceTree = "<group>"; };
 		48A5D29A2263C54000F8B2D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925FCA192273188A00C65840 /* WalkingModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WalkingModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		48A5D2822263C53F00F8B2D3 /* CatBoost test */ = {
 			isa = PBXGroup;
 			children = (
+				925FCA192273188A00C65840 /* WalkingModel.mlmodel */,
 				48A5D2832263C53F00F8B2D3 /* AppDelegate.swift */,
 				48A5D2852263C53F00F8B2D3 /* ViewController.swift */,
 				48A5D2872263C53F00F8B2D3 /* Main.storyboard */,
@@ -199,6 +202,7 @@
 			files = (
 				48A5D2862263C53F00F8B2D3 /* ViewController.swift in Sources */,
 				48A5D2842263C53F00F8B2D3 /* AppDelegate.swift in Sources */,
+				925FCA20227321D500C65840 /* WalkingModel.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +365,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Automatic;
+				COREML_CODEGEN_SWIFT_GLOBAL_MODULE = YES;
 				DEVELOPMENT_TEAM = NH8T998P7V;
 				INFOPLIST_FILE = "CatBoost test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -370,7 +376,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CatBoost-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -380,6 +386,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Automatic;
+				COREML_CODEGEN_SWIFT_GLOBAL_MODULE = YES;
 				DEVELOPMENT_TEAM = NH8T998P7V;
 				INFOPLIST_FILE = "CatBoost test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -389,7 +397,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CatBoost-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
